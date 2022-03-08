@@ -3,9 +3,16 @@ import 'package:flutter/material.dart';
 void main() {
   var appTitle = Text('My APP'),
       hiFlutter = Text(
-        'Hi,Flutter!',
-        style: TextStyle(fontSize: 50),
+        'Hi,Flutter!\nToday is 20220308',
+        style: TextStyle(
+            fontSize: 50,
+            fontWeight: FontWeight.bold,
+            decoration: TextDecoration.underline,
+            color: Colors.deepPurpleAccent,
+        ),
+
       );
+  //var img = Image.asset("images/aa.jpg");
   var appBody = Center(
     child: hiFlutter,
   );
@@ -16,6 +23,7 @@ void main() {
     home: Scaffold(
       appBar: appBar,
       body: appBody,
+      backgroundColor: Colors.yellow,
     ),
   );
   runApp(app);
